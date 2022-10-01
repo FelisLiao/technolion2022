@@ -7,6 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Maven+Pro:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <section class="header">
@@ -15,16 +18,53 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="download-iOS.html">DOWNLOADN iOS</a></li>
-                    <li><a href="download-WindowsOS.html">DOWNLOAD WINDOWS OS</a></li>
+                    <li><a href="download-iOS.html">DOWNLOAD FOR MAC</a></li>
+                    <li><a href="download-WindowsOS.html">DOWNLOAD FOR WINDOWS</a></li>
+                    <li><a href="satellite.html">SATELLITES</a></li>
                 </ul>
             </div>
         </nav>
         <div class="slogan">
-            <h1>TechnoLion presents</h1>
-            <h2>ETONES, STORIES OF SPACE SHARED WITH MUSIC</h2>
+            <h1>Download for Mac</h1>
+            <h2>An indepth and comprehensive guide to set up Etones for Mac</h2>
         </div>
     </section>
+    <div class="container">
+        <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="img/A%20Half-Century%20of%20Loss%20in%20Northwest%20Greenland.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/A%20Half-Century%20of%20Loss%20in%20Northwest%20Greenland.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/A%20Half-Century%20of%20Loss%20in%20Northwest%20Greenland.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="img/A%20Half-Century%20of%20Loss%20in%20Northwest%20Greenland.jpg" alt=""></div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+    </script>
     <div class="links">
            <h1>TO START LISTENING YOU WILL NEED</h1>
            <a href="https://musescore.org/en/download" class="hero-btn">Download Etones</a>

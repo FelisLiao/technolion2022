@@ -190,10 +190,100 @@ nav img{
     align-items: center;
     text-align: center;
     background-color: #f2efea;
+    padding-bottom: 15vh;
 }
 .links h1{
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
+/*--SATELLITES---*/
+/*--SUB SATELLITES---*/
+.satellites{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: url(satellites/img/background.png)
+}
+.sat-nav ul{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sat-nav ul li{
+    list-style: none;
+}
+.sat-nav ul li a{
+    position: relative;
+    display: block;
+    padding: 10px 60px;
+    margin: 20px 0px;
+    text-decoration: none;
+    color: antiquewhite;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 22px;
+}
+.sat-nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    transform: scaleY(2);
+    opacity: 0;
+    transition: 0.5s;
+}
+.sat-nav ul li a:hover:before{
+    transform: scaleY(1);
+    opacity: 1;
+}
+.sat-container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30vh;
+    color:  antiquewhite;
+}
+.sat-container h1{
+    width: 18%;
+    text-align: right;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 50px
+}
+.sat-container img{
+    width: 60%;
+    filter: drop-shadow(.75em .75em .1em);
+    color: rgba(0, 0, 0, 0.7);
+    
+}
+.sat-container p{
+    width: 18%;
+    text-align: left;
+    left: 0;
+    padding-left: 14px;
+    border-left: 2px solid antiquewhite;
+    padding-bottom: 10vh;
+}
+/*--.landsat8{
+    width: 100%;
+    height: 100vh;
+}
+.landsat8 img{
+    width: 50%;
+    filter: drop-shadow(.75em .75em .1em);
+color: rgba(90, 90, 119, 0.78);}---*/
+
+
+
 
 
 
